@@ -40,8 +40,19 @@ int main() {
     int age;
     float score;
 
+    cout<< "Enter Student Name: ";
+    cin>> name;
+    cout<< "Enter Student Age: ";
+    cin>> age;
+    cout<< "Enter Student Score: ";
+    cin>> score;
+    cout<< endl;
 
-    Student studentnt1;
+
+    Student studentnt1(name, age, score);  
+    studentnt1.displayPerformance();
+
+    return 0;   
 
 }
 
